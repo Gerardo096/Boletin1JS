@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+
+<body>
+    <header>Ejercicio 4</header>
+    <script language="javascript">
+        function fnum() {
+            var numero1 = prompt("Introduzca el primer numero")
+            var numero2 = prompt("Introduzca el segundo numero")
+
+            numero1 = parseInt(numero1);
+            numero2 = parseInt(numero2);
+            if (numero1 > numero2) {
+                alert(numero1 + " es mayor que " + numero2);
+                var mayor = numero1;
+            } else if (numero1 == numero2) {
+                alert(" Son iguales");
+                if (numero1 == 100 && numero2 == 100) {
+                    alert(" son iguales a 100")
+                }
+            } else {
+                alert(numero2 + " es mayor que " + numero2);
+                var mayor = numero2;
+            }
+            if (mayor > 100) {
+                alert(mayor + " es mayor a 100")
+            } else if (mayor == 100) {
+                alert("El mayor es igual a 100")
+            } else {
+                alert("Ambos son menores que 100")
+            }
+
+
+
+        }
+    </script>
+    <h1>Presiona para comparar sus numeros</h1>
+    <form>
+        <input type="button" value="Comparar" onclick=fnum()>
+    </form>
+</body>
+
+</html>
