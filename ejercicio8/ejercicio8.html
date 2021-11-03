@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+
+<body>
+    <script language="javascript">
+        function fprimo() {
+            var numero = prompt("Introduzca un numero")
+
+            if (numero == 1) {
+                document.write("")
+            } else if (numero == 0) {
+                document.write("")
+            } else {
+                for (i = 2; i <= numero; i++) {
+                    if (i == numero) {
+                        document.write("El numero es primo")
+                        break;
+                    } else if (numero % i == 0) {
+                        document.write("El numero no es primo")
+                        break;
+                    }
+                }
+            }
+
+
+
+
+
+        }
+    </script>
+    <h1>Presiona para comprobar su numero </h1>
+    <form>
+        <input type="button" value="Mostrar" onclick=fprimo()>
+    </form>
+</body>
+
+</html>
