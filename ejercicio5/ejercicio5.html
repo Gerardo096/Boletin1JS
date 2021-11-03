@@ -16,20 +16,31 @@
             var nueve = 9;
             var t7 = 0;
             var x = 0;
+            var y = 0;
             var t8 = 0;
+            var t9 = 0;
+            document.write("Tabla del 7 <br>")
             for (var i = 0; i < 10; i++) {
                 t7 = i * siete;
-                document.write(siete + "x" + i + " = " + t7 + "<br>");
+                document.write(siete + "x" + i + " = " + t7 + "<br>")
             }
+            document.write("Tabla del 8 <br>")
             while (x < 10) {
                 t8 = x * ocho;
-                document.write(ocho + "x" + x + " = " + t8 + "<br>");
+                document.write(ocho + "x" + x + " = " + t8 + "<br>")
                 x++;
             }
+            document.write("Tabla del 9 <br>")
+            do {
+                t9 = x * nueve;
+                document.write(nueve + "x" + y + " = " + t9 + "<br>")
+                y++;
+            } while (y < 10)
 
 
 
         }
+        tablamult();
     </script>
 </body>
 
