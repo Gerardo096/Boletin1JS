@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+
+<body>
+    <script>
+        function fnumero() {
+            var numaleatorio = Math.floor((Math.random() * (iMax)) + 1);
+            var intentos = prompt("Inserte un numero de intentos para adivinar el numero");
+
+            while (x < intentos) {
+                var numerousuario = prompt("Intente acertar el numero");
+
+                if (numerousuario == numaleatorio) {
+                    document.write("Has acertado el numero");
+                    break;
+                } else {
+                    document.write("Numero incorrecto");
+                    x++;
+                }
+            }
+        }
+    </script>
+    <h1>Presiona para comenzar Akinator </h1>
+    <form>
+        <input type="button" value="Comenzar" onclick=fnumero()>
+    </form>
+</body>
+
+</html>
