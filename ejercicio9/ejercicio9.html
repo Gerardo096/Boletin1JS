@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+</head>
+
+<body>
+    <script language="javascript">
+        function fpalindromo() {
+            var cadena = prompt("Introduzca una palabra")
+            var boolean;
+
+            for (i = 0; i < cadena.length; i++) {
+                if (cadena[i] !== cadena[(cadena.length - 1) - i]) {
+                    boolean = false;
+                } else {
+                    boolean = true;
+                }
+            }
+            if (boolean) {
+                document.write("Es un palindromo")
+            } else {
+                document.write("No es un palindromo")
+            }
+
+
+
+
+
+        }
+    </script>
+    <h1>Presiona para comprobar la palabra </h1>
+    <form>
+        <input type="button" value="Mostrar" onclick=fpalindromo()>
+    </form>
+</body>
+
+</html>
